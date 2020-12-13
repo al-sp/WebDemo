@@ -6,6 +6,7 @@ using DataLibrary.Data;
 using DataLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using RPDemoApp.Models;
 
 namespace RPDemoApp.Pages.Orders
 {
@@ -18,6 +19,9 @@ namespace RPDemoApp.Pages.Orders
         public int Id { get; set; }
         public OrderModel Order { get; set; }
         public string ItemPurchased { get; set; }
+
+        [BindProperty]
+        public OrderUpdateModel UpdateModel { get; set; }
 
         public DisplayModel(IOrderData orderData, IFoodData foodData)
         {
@@ -37,6 +41,18 @@ namespace RPDemoApp.Pages.Orders
             }
 
             return Page();
+        }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            await _orderData.UpdateOrderName(UpdateModel.Id, UpdateModel.OrderName);
+
+            return RedirectToPage("./display", new { UpdateModel.Id });
         }
     }
 }
