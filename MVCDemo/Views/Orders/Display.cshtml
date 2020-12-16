@@ -1,0 +1,56 @@
+﻿@model MVCDemoApp.Models.OrderDisplayModel
+
+
+@{
+    ViewData["Title"] = "Display";
+}
+
+<h1>Display</h1>
+
+@if (Model.Order is null)
+{
+    <h4>The requested record was not found.</h4>
+}
+else
+{
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Order Name</td>
+                <td>@Model.Order.OrderName</td>
+            </tr>
+            <tr>
+                <td>Order Date</td>
+                <td>@Model.Order.OrderDate</td>
+            </tr>
+            <tr>
+                <td>Order Total</td>
+                <td>@string.Format("{0:C}", Model.Order.Total)</td>
+            </tr>
+            <tr>
+                <td>Item Order</td>
+                <td>@Model.ItemPurchased</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>@Model.Order.Quantity</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a asp-action="Delete" asp-route-id="@Model.Order.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form asp-action="Update">
+        <input name="id" value="@Model.Order.Id" type="hidden" />
+        <div class="form-group">
+            <label class="control-label">Order Name</label>
+            <input name="orderName" value="@Model.Order.OrderName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Update Order Name" class="btn btn-primary" />
+        </div>
+    </form>
+}
