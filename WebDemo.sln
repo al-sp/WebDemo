@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPDemoApp", "RPDemoApp\RPDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{239CB685-0980-425D-903B-B3512948D8AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIDemo", "APIDemo\APIDemo.csproj", "{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerDemo", "BlazorServerDemo\BlazorServerDemo.csproj", "{732FA708-47CC-4E3F-8CD4-6CED5ADE4EF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732FA708-47CC-4E3F-8CD4-6CED5ADE4EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732FA708-47CC-4E3F-8CD4-6CED5ADE4EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732FA708-47CC-4E3F-8CD4-6CED5ADE4EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732FA708-47CC-4E3F-8CD4-6CED5ADE4EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
