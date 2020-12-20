@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPDemoApp", "RPDemoApp\RPDemoApp.csproj", "{A7D94F00-49C8-48C0-88D8-A1662209DC0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{239CB685-0980-425D-903B-B3512948D8AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{239CB685-0980-425D-903B-B3512948D8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{239CB685-0980-425D-903B-B3512948D8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{239CB685-0980-425D-903B-B3512948D8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{239CB685-0980-425D-903B-B3512948D8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFDE10B-3A2A-4E82-BBF1-64F49255802C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
